@@ -16493,7 +16493,7 @@ PrefabInstance:
     - target: {fileID: 7788284400653959179, guid: cf353de086542b541b7d218cf9ab3c17,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 7788284400653959179, guid: cf353de086542b541b7d218cf9ab3c17,
         type: 3}
@@ -130335,7 +130335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0755a2ba17a31d643b4a27e3034d8a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: 2a7b9f88c98255f4a95087e3f46b3ac1, type: 3}
+  sound: {fileID: 8300000, guid: 2980d682d00dd44669f0ba9abb9a5d8d, type: 3}
   volume: 1
   randomPitchVariance: 0
 --- !u!82 &7043853987381725299
@@ -130448,6 +130448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basketballTag: Basketball
   hudOffset: {x: 0, y: -0.4, z: 1.5}
+  scoreSoundClip: {fileID: 0}
 --- !u!114 &7088147331725107286
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,18 +1,26 @@
 using UnityEngine;
-using UnityEngine.UI; // Changed from TMPro to UnityEngine.UI
+using UnityEngine.UI; 
 
-public class SimpleScore : MonoBehaviour
+public class SimpleScore : MonoBehaviour 
 {
-    public Text scoreText; // Changed from TextMeshProUGUI to Text
-    private int score = 0;
+    public Text scoreText; 
+    private int score = 0; 
 
-    private void OnTriggerEnter(Collider other)
-{
-    if (other.CompareTag("Basketball"))
-    {
-        // Automatically finds the bootstrap on the player and adds points
-        FindObjectOfType<VRScoreboardBootstrap>().AddPoint(2);
-    }
-}
+    private void OnTriggerEnter(Collider other) 
+    { 
+        if (other.CompareTag("Basketball")) 
+        { 
+            // Fix: Added Global. prefix to find the bootstrap wrapped in the namespace
+            Global.VRScoreboardBootstrap scoreboard = FindObjectOfType<Global.VRScoreboardBootstrap>();
 
+            if (scoreboard != null)
+            {
+                scoreboard.AddPoint(2);
+            }
+            else
+            {
+                Debug.LogWarning("SimpleScore: VRScoreboardBootstrap could not be found in the scene!");
+            }
+        } 
+    } 
 }
