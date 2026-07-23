@@ -4,23 +4,29 @@ public class FollowScript : MonoBehaviour
 {
     public float Speed;
 
-    public Transform Target;
+    private Vector3 Human;
+
+    private Transform Dog;
+
 
     void Update()
     {
-        // Ignore y position of target and allow natural fall of gravity
-        Vector3 TargetPosition = new Vector3(Target.position.x, transform.position.y, Target.position.z);
+        //Ignore y position of target and allow natural gravity of Dog
+        Human = new Vector3(Target.position.x, Dog.position.y, Target.position.z);
 
-        // Calculate distance to move
+
+        // calculate distance to move
         float distance = Speed * Time.deltaTime; 
 
-        transform.position = Vector3.MoveTowards(transform.position, TargetPosition, distance);
 
-        RotateTowards();
+        Debug.Log("FOLLOW THE HUMAN!!");
+        Dog.position = Vector3.MoveTowards(Dog.position, Human, distance);
+
+
+        RotateTowardsTarget();
     }
 
-
-    private void RotateTowards()
+    private void RotateTowardsTarget()
     {
         var lookPos = Target.position - transform.position;
         lookPos.y = 0;
@@ -28,6 +34,16 @@ public class FollowScript : MonoBehaviour
 
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Speed * 4f * Time.deltaTime);
     }
+
+    public Transform Target;
+
+    #region Setup
+    private void Awake()
+    {
+        Dog = this.transform;
+    }
+    #endregion
+
 
 
 
