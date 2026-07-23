@@ -288,8 +288,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3881938889362999602, guid: 41c195e409ff2ea4eb1c5cc3cf5a8b83,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1730595065}
   m_SourcePrefab: {fileID: 100100000, guid: 41c195e409ff2ea4eb1c5cc3cf5a8b83, type: 3}
+--- !u!1 &7999460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3881938889362999602, guid: 41c195e409ff2ea4eb1c5cc3cf5a8b83,
+    type: 3}
+  m_PrefabInstance: {fileID: 7999459}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8496210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19543,8 +19553,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3881938889362999602, guid: 41c195e409ff2ea4eb1c5cc3cf5a8b83,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1211596746}
   m_SourcePrefab: {fileID: 100100000, guid: 41c195e409ff2ea4eb1c5cc3cf5a8b83, type: 3}
+--- !u!1 &347289850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3881938889362999602, guid: 41c195e409ff2ea4eb1c5cc3cf5a8b83,
+    type: 3}
+  m_PrefabInstance: {fileID: 347289849}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &347988891 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dcd0a66ec1b01c5438483d8603e8eacc,
@@ -29860,8 +29880,8 @@ Transform:
   m_GameObject: {fileID: 505052182}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.961, y: 2.39, z: -0}
-  m_LocalScale: {x: 0.52278, y: 0.7655086, z: 0.66805}
+  m_LocalPosition: {x: -1.935, y: 2.39, z: 0}
+  m_LocalScale: {x: 0.36862963, y: 0.7655086, z: 0.4295857}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1680639773}
@@ -59789,8 +59809,8 @@ Transform:
   m_GameObject: {fileID: 1039571411}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -1.931, y: 2.3899999, z: 0.004}
-  m_LocalScale: {x: 0.52278, y: 0.7655086, z: 0.66804993}
+  m_LocalPosition: {x: -1.943, y: 2.3899999, z: 0.002}
+  m_LocalScale: {x: 0.29088628, y: 0.7655086, z: 0.37819517}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2015326934}
@@ -69573,6 +69593,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 347289849}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1211596746
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347289850}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 587366007896238738, guid: 092f15ffe6b12674288fab6bdb6fa195, type: 3}
 --- !u!4 &1211718380 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dcd0a66ec1b01c5438483d8603e8eacc,
@@ -102890,6 +102932,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7999459}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1730595065
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7999460}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 587366007896238738, guid: 092f15ffe6b12674288fab6bdb6fa195, type: 3}
 --- !u!4 &1731402482 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4787411273203938010, guid: 07a06f81324700445a35e998241c90a0,
